@@ -1,7 +1,7 @@
 <?php include_once '../header.php';
 include_once '../conexao.php'; 
 
-$cris = $con->prepare("SELECT * FROM demonio");
+$cris = $con->prepare("SELECT * from vista;");
 $cris->execute();
 $dados = $cris->fetchAll(PDO::FETCH_OBJ)
 ?>
@@ -18,8 +18,8 @@ $dados = $cris->fetchAll(PDO::FETCH_OBJ)
         <tr>
             <td> <?= $row->id; ?></td>
             <td> <?= $row->demonios; ?></td>
-            <td> <?= $row->cacadores; ?></td>
-            <td><a href="formeditar_demonio.php?id=<?= $row->id; ?>&demonios=<?= $row->demonios; ?>&cacadores=<?= $row->cacadores; ?>" class="btn btn-info" > Editar</a></td>
+            <td> <?= $row->nome; ?></td>
+            <td><a href="formeditar_demonio.php?id=<?= $row->id; ?>&demonios=<?= $row->demonios; ?>&cacadores=<?= $row->nome; ?>" class="btn btn-info" > Editar</a></td>
             <td><a href="deletar_demonio.php?id=<?= $row->id; ?>" class="btn btn-danger" > Excluir</a></td>
 
         </tr>

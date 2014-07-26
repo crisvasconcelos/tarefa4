@@ -21,7 +21,7 @@
             <nav class="navbar navbar-inverse" role="navigation" style="width: 480px;">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="/index.php">Inicio</a> 
-                    <a  class="navbar-brand" href="/cacadores.php">Caçadores</a>
+                    <a  class="navbar-brand" href="/CRUD_cacadores/cacadores.php">Caçadores</a>
                     <a  class="navbar-brand" href="/CRUD_demonios/demonios.php">Demônios</a>
                     <a  class="navbar-brand" href="/CRUD_usuario/usuario.php">Usuário</a>
                     <a  class="navbar-brand" href="/LOGIN/logout.php">Sair</a>
