@@ -3,7 +3,7 @@
 include_once("../header.php");
 include_once '../conexao.php';
 
-$cris = $con->prepare("SELECT * from cacadores;;");
+$cris = $con->prepare("SELECT * from cacadores;");
 $cris->execute();
 $dados = $cris->fetchAll(PDO::FETCH_OBJ)
 
