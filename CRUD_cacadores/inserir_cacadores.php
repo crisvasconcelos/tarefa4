@@ -7,7 +7,7 @@ $cacadores = $_POST['cacadores'];
   
 //if ($login ){
 $cris = $con->prepare("INSERT INTO cacadores(cacadores) VALUES (:cacadores);");
-$cris->bindParam(':cacadores', strtoupper(trim($cacadores)), PDO::PARAM_STR);
+$cris->bindParam(':cacadores', (trim($cacadores)), PDO::PARAM_STR);
 $cris->execute();
 
 //pg_query("INSERT INTO usuario (login,senha) VALUES ('$login','$senha');");
