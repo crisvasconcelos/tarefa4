@@ -1,5 +1,6 @@
 <?php
 include_once("../header.php");
+include_once("../permissão.php");
 include_once '../conexao.php';
 ?>
 <div class="col-md-5">
@@ -10,7 +11,7 @@ include_once '../conexao.php';
             <div class="form-group">
                 <label class="col-sm-2 control-label">Cacadores:</label>
                 <div class="col-sm-10">                       
-                    <input type="text" name="cacadores" value="<?= $_GET['cacadores']; ?>" />
+                    <input type="text" name="cacadores" required value="<?= $_GET['cacadores']; ?>" />
                 </div>
             </div>
 

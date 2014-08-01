@@ -10,7 +10,7 @@ include_once '../conexao.php';
             <div class="form-group">
                 <label class="col-sm-2 control-label">Cacadores:</label>
                 <div class="col-sm-10">                       
-                    <input type="text" name="cacadores" />
+                    <input type="text" name="cacadores" required />
                 </div>
             </div>
 

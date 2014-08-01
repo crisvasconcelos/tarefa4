@@ -5,28 +5,26 @@
         <title> Sobrenatural </title>
         <!-- Icone -->
         <link rel="shortcut icon" href="logo.png" />
-       <!-- Bootstrap.css -->
-       <link href="../css/bootstrap.min.css" rel="stylesheet">
-       <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+        <!-- Bootstrap.css -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
         <!-- jQuery  -->
         <script src="../js/jquery.min.js"></script>
         <!-- Bootstrap js -->
         <script src="../js/bootstrap.min.js"></script>
     </head>
-
-    <div class="col-md-4 col-md-offset-4">
-        <h1> Login </h1>
-        <form method="POST" action="verificalogin.php">
-            <div class="form-group">
-                <label>Usuário:</label>
-                <input type="text" name="usuario" class="form-control" placeholder="Digite seu usuário">
-            </div>
-            <div class="form-group">
-                <label>Senha:</label>
-                <input type="password" name="senha" class="form-control" placeholder="Digite sua senha">
-            </div>
-            <button type="submit" class="btn btn-info">Logar</button>
-        </form>
-    </div>
-
+        <div class="well col-md-4 col-md-offset-4">
+            <h1> Login </h1>
+            <form method="POST" action="verificalogin.php">
+                <div class="form-group">
+                    <label>Usuário:</label>
+                    <input type="text" name="usuario" class="form-control" placeholder="Digite seu usuário">
+                </div>
+                <div class="form-group">
+                    <label>Senha:</label>
+                    <input type="password" name="senha" class="form-control" placeholder="Digite sua senha">
+                </div>
+                <button type="submit" class="btn btn-info">Logar</button>
+        </div>
+    
 </html>

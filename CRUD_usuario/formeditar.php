@@ -4,8 +4,10 @@ include_once '../conexao.php';
 
 ?>
 <div class="col-md-5">
+            <?php if ($_SESSION['admin']): ?>
     <form class="form-horizontal" action="editar.php" method="POST">
         <fieldset>
+
             <legend>Usuário</legend>
             <input type="hidden" name="id" value="<?= $_GET['id']; ?>" />
             <div class="form-group">
@@ -27,4 +29,8 @@ include_once '../conexao.php';
                 </div>
             </div>
         </fieldset>
+        <?php else: ?>
+            <th>Você não tem permissão haha -'-</th>
+            
+        <?php endif; ?>
     </form>
