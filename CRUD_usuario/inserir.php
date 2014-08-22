@@ -9,8 +9,8 @@ $is_admin = empty($_POST['isadmin'] ) ? 'FALSE' : 'TRUE';
 
 //if ($login ){
 $cris = $con->prepare("INSERT INTO usuario(login,senha,admin) VALUES(:login,md5(:senha),:admin)");
-$cris->bindParam(':login', strtoupper(trim($login)), PDO::PARAM_STR);
-$cris->bindParam(':senha', strtoupper(trim($senha)), PDO::PARAM_STR);
+$cris->bindParam(':login', (trim($login)), PDO::PARAM_STR);
+$cris->bindParam(':senha', (trim($senha)), PDO::PARAM_STR);
 $cris->bindParam(':admin', $is_admin , PDO::PARAM_STR);
 $cris->execute();
 

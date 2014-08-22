@@ -2,8 +2,8 @@
 
 include '../conexao.php';
 
-$usuario = strtoupper($_POST['usuario']);
-$senha = strtoupper($_POST['senha']);
+$usuario = ($_POST['usuario']);
+$senha = ($_POST['senha']);
 
 $cris = $con->prepare("SELECT * FROM usuario");
 $cris->execute();
